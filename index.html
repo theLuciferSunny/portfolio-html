@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+	<head>
+		<title>Rajanshu Ujjwal</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Lobster+Two|Oleo+Script|Playball|Audiowide' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="jq.js"></script>
+		<script>
+		function hello(){
+			alert ('Thank You! We will contact you soon.');
+		}
+		</script>
+
+		<style>
+		h1 {
+			font-family: 'Lobster Two', cursive;
+			font-size: 36px;
+		}
+		body {
+			text-align: center;
+			background: url("img/bg.jpg");
+			color: white;
+			font-family: 'ubuntu', helvetica, sans-serif;
+			overflow-x: hidden;
+		}
+		p{
+			font-family: 'ubuntu-light', helvetica, sans-serif; 
+		}
+		a{
+			text-decoration: none;
+			color: gray;
+			font-weight: bold;
+		}
+		a:hover{
+			color:white;
+			font-weight: bolder;
+		}
+		input[type="submit"]:hover {
+			background-color: #355C92;
+		}
+		nav {
+			text-align: center;
+			position: fixed;
+		}
+		nav.ul {
+			list-style-type:none;
+		}
+		li {
+			list-style-type:none;
+			opacity: 0.6;
+			color: white;
+			padding:10px;
+			text-align: center;
+		}
+		article {
+			margin: 30px;
+		}
+		.pro-pix {
+			border-style: solid;
+			border-width: 5px;
+			border-color: rgba(0,0,0,0.4);
+			border-radius: 50%;
+		}
+		.pro-pix2:hover{
+			-moz-transform: translate(100px) rotate(20deg);
+			-moz-transform-origin: 0 -250px;
+			-webkit-transform: translate(100px) rotate(20deg);
+			-webkit-transform-origin: 0 -250px;		}
+		.pro-pix2 {
+			border-style: solid;
+			border-width: 3px;
+			border-color: #FFF;
+			border-radius: 10%;
+		}
+		.image-bar{
+			margin: 30px;
+			height: 150px;
+		}
+		.btn {
+			color: red;
+			background-color: #0D47A9;
+			border-radius: 10px;
+			border-style: solid;
+			border-width: 2px;
+		}
+		input{
+			border: 0;
+			padding: 12px;
+			border-radius: 20px;
+		}
+		input[type="submit"]{
+			background: #1E457B;
+			color: white;
+			font-weight: bold;
+			font-family: helvetica;
+			border-radius: 20px;
+		}
+		.block-4{
+			width: 300px;
+			height: 400px;
+			background: white;
+			display: inline;
+			padding: 5px;
+		}
+		#nav-bar{
+			text-align: center;
+			display: fixed;
+			background: black;
+			height: 50px;
+			position: fixed;
+		}
+		div {
+  			-moz-transition: all 1.5s ease;
+		}
+		</style>
+	</head>
+
+<body>
+<div id="nav-bar">
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#Favs">Favorites</a></li>
+				<li><a href="#Contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+</div>
+	<img class="pro-pix" src="img/suny.jpg" width="300" height="300">
+	<h1>Rajanshu Ujjwal</h1>
+	<p>Front End Developer, Independent Security Researcher, India</p>
+	<p><b>About Me:</b> Hey there! I am a designer by heart and has <br>
+	knowledge about HTML5, CSS3, jQuery &amp; JavaScript.</p>
+	<p></p>
+	<input type="email" placeholder="Enter your email id">
+	<input type="submit" value="Submit" onclick="hello();"><br><br>
+	<hr>
+	<div id="Favs">
+	<h2>My Favorites</h2>
+		<img id="chr" class="pro-pix2" src="img/1.jpg" height="300" width="300" alt="Akshay Kumar">
+		<img class="pro-pix2" src="img/3.jpg" height="300" width="300" alt="Leonardo da Vinci">
+		<img class="pro-pix2" src="img/2.jpg" height="300" width="300" alt="Leonardo di Caprio">
+	<br>
+		<img class="pro-pix2" src="img/4.jpg" height="300" width="300">
+		<img class="pro-pix2" src="img/beer.jpg" height="300" width="300">
+		<img class="pro-pix2" src="img/baba.jpg" height="300" width="300">
+	<br>
+	</div>
+	<hr>
+	<div id="Contact">
+		<form>
+			<input type="text" label="Name" ng-model="name">
+			<p> Hello {{name}}</p>
+		</form>
+	</div>
+	</body>
+
+</html>
